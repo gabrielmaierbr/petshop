@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*
+{
+    user-select: none;
+}
+
+header
+{
+    font-family: "Cabin", sans-serif;
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    padding: 0 15px;
+    border-radius: 10px;
+}
+
+#logo
+{
+    display: inline;
+    margin-top: 6px;
+    height: 70px;
+    width: 80px;
+}
+
+body
+{
+    background-color: rgb(240, 240, 240);
+}
+
+#menu
+{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#menu ul
+{
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+#menu ul li
+{
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+#menu ul li a
+{
+    text-decoration: none;
+    display: inline;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    transition: 0.8s;
+    border-radius: 10px;
+    color: black;
+}
+
+#menu ul li a:hover
+{
+    padding: 10px 20px;
+    background-color: rgb(84, 202, 84);
+}
+
+#menu img
+{
+    height: 15px;
+    width: 15px;
+}
+
+#busca
+{
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    margin-top: 12px;
+}
+
+#conta
+{
+    border-radius: 10px;
+    background-color: rgb(228, 228, 228);
+    padding: 0 20px;
+}
+
+#menu2
+{
+    font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+#menu2 ul
+{
+    display: flex;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+#menu2 ul li
+{
+    display: flex;
+    justify-content: center;
+    padding: 0 50px;
+}
+
+#menu2 ul li a
+{
+    text-decoration: none;
+    display: inline;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    transition: 0.8s;
+    border-radius: 10px;
+    color: black;
+}
+
+#menu2 ul li a:hover
+{
+    padding: 10px 20px;
+    background-color: rgb(84, 202, 84);
+}
+
+.cart
+{
+    font-family: "Inter", sans-serif;
+}
+
+.cart h1
+{
+    text-align: start;
+    margin-left: 80px;
+}
+
+.produtos
+{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    justify-content: start;
+    margin-left: 80px;
+}
+
+.produtos nav div
+{
+    font-size: 15px;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px;
+    width: 700px;
+    height: 400px;
+    text-align: center;
+    box-shadow: 0 0 5px black;
+    transition: 0.8s;
+}
+
+.produtos nav div:hover
+{
+    background-color: rgb(84, 202, 84);
+}
+
+.produtos nav div section
+{
+    display: flex;
+    justify-content: end;
+    font-size: 20px;
+}
+
+.produtos img
+{
+    height: 250px;
+    width: 250px;
+}
+
+footer
+{
+    margin-top: 20px;
+    font-family: "Cabin", sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
