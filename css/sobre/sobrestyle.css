@@ -17,63 +17,63 @@ header
     border-radius: 10px;
 }
 
-#logo
-{
-    display: inline;
-    margin-top: 6px;
-    height: 70px;
-    width: 80px;
-}
+    #logo
+    {
+        display: inline;
+        margin-top: 6px;
+        height: 70px;
+        width: 80px;
+    }
 
-body
-{
-    background-color: rgb(240, 240, 240);
-}
+    body
+    {
+        background-color: rgb(240, 240, 240);
+    }
 
-#menu
-{
-    font-family: "Inter", sans-serif;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-}
+    #menu
+    {
+        font-family: "Inter", sans-serif;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
 
-#menu ul
-{
-    display: flex;
-    justify-content: center;
-    padding: 0 15px;
-}
+        #menu ul
+        {
+            display: flex;
+            justify-content: center;
+            padding: 0 15px;
+        }
 
-#menu ul li
-{
-    display: flex;
-    justify-content: center;
-    padding: 0 50px;
-}
+            #menu ul li
+            {
+                display: flex;
+                justify-content: center;
+                padding: 0 50px;
+            }
 
-#menu ul li a
-{
-    text-decoration: none;
-    display: inline;
-    padding: 10px 10px;
-    margin: 10px 10px;
-    transition: 0.8s;
-    border-radius: 10px;
-    color: black;
-}
+                #menu ul li a
+                {
+                    text-decoration: none;
+                    display: inline;
+                    padding: 10px 10px;
+                    margin: 10px 10px;
+                    transition: 0.8s;
+                    border-radius: 10px;
+                    color: black;
+                }
 
-#menu ul li a:hover
-{
-    padding: 10px 20px;
-    background-color: rgb(84, 202, 84);
-}
+                    #menu ul li a:hover
+                    {
+                        padding: 10px 20px;
+                        background-color: rgb(84, 202, 84);
+                    }
 
-#menu img
-{
-    height: 15px;
-    width: 15px;
-}
+    #menu img
+    {
+        height: 15px;
+        width: 15px;
+    }
 
 #busca
 {
@@ -98,36 +98,36 @@ body
     padding: 0;
 }
 
-#menu2 ul
-{
-    display: flex;
-    justify-content: center;
-    padding: 0 15px;
-}
+    #menu2 ul
+    {
+        display: flex;
+        justify-content: center;
+        padding: 0 15px;
+    }
 
-#menu2 ul li
-{
-    display: flex;
-    justify-content: center;
-    padding: 0 50px;
-}
+        #menu2 ul li
+        {
+            display: flex;
+            justify-content: center;
+            padding: 0 50px;
+        }
 
-#menu2 ul li a
-{
-    text-decoration: none;
-    display: inline;
-    padding: 10px 10px;
-    margin: 10px 10px;
-    transition: 0.8s;
-    border-radius: 10px;
-    color: black;
-}
+            #menu2 ul li a
+            {
+                text-decoration: none;
+                display: inline;
+                padding: 10px 10px;
+                margin: 10px 10px;
+                transition: 0.8s;
+                border-radius: 10px;
+                color: black;
+            }
 
-#menu2 ul li a:hover
-{
-    padding: 10px 20px;
-    background-color: rgb(84, 202, 84);
-}
+            #menu2 ul li a:hover
+            {
+                padding: 10px 20px;
+                background-color: rgb(84, 202, 84);
+            }
 
 .sobre
 {
@@ -137,22 +137,22 @@ body
     justify-content: center;
 }
 
-.sobre div
-{
-    border-radius: 20px;
-    box-shadow: 0 0 5px rgb(84, 202, 84);
-    padding: 50px;
-}
+    .sobre div
+    {
+        border-radius: 20px;
+        box-shadow: 0 0 5px rgb(84, 202, 84);
+        padding: 50px;
+    }
 
-.sobre div h2
-{
-    text-align: center;
-}
+    .sobre div h2
+    {
+        text-align: center;
+    }
 
-.sobre div h3
-{
-    text-align: start;
-}
+    .sobre div h3
+    {
+        text-align: start;
+    }
 
 footer
 {

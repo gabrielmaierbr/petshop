@@ -6,6 +6,7 @@
     <title>Pet Shop</title>
     <link rel="shortcut icon" href="../css/index/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/carrinho/carrinhostyle.css">
+    <script src="../js/carrinhoscript.js"></script>
 </head>
 <body>
 
@@ -54,7 +55,31 @@
         </nav>
     </div>
 
-    <section class="cart">
+    <section class="menuVenda">
+        <div class="dados">
+            <h1>Total</h1>
+            <h3>Resumo do Pedido</h3><br>
+            <div id="input">
+                <div id="buscarCep">
+                    <form action="">
+                      <input type="text" id="cepInput" placeholder="Digite seu CEP:">
+                      <input type="submit" id="botao" value="PESQUISAR" onclick="buscarEndereco()">
+                      <div id="endereco">Digite algum CEP</div>
+                    </form>
+                  </div>                
+            </div>
+            <div class="dadosNumeros">
+                <h4 id="valorTotalCompra">Valor: </h4>
+                <h4 id="valorDesconto">Desconto: </h4>
+                <h4 id="subtotal">Total a pagar: </h4>
+            </div>
+            <div id="endereco">
+                <h4>Texto</h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="cart">''
         <h1>Carrinho de compras</h1>
         <div class="produtos">
             <nav>
