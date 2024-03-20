@@ -16,4 +16,17 @@ function buscarEndereco() {
         }
     })
     .catch(error => console.error('Erro:', error));
-  }
+}
+
+let valor1 = document.getElementById("valor1").innerText;
+let valor2 = document.getElementById("valor2").innerText;
+
+valor1 = parseFloat(valor1.replace(',', '.'));
+valor2 = parseFloat(valor2.replace(',', '.'));
+
+let valorTotal = valor1 + valor2;
+
+let valorTotalFormatado = valorTotal.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+
+let subtotal = document.getElementById("subtotal");
+subtotal.innerText = `Total a pagar: R$${valorTotalFormatado}`;

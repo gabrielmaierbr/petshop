@@ -6,7 +6,7 @@
     <title>Pet Shop</title>
     <link rel="shortcut icon" href="../css/index/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/carrinho/carrinhostyle.css">
-    <script src="../js/carrinhoscript.js"></script>
+    <script src="../js/carrinhoscript.js" defer></script>
 </head>
 <body>
 
@@ -79,7 +79,7 @@
         </div>
     </section>
 
-    <section class="cart">''
+    <section class="cart">
         <h1>Carrinho de compras</h1>
         <div class="produtos">
             <nav>
@@ -87,15 +87,24 @@
                     <h2>Ratinho de PVC</h2>
                     <img src="../css/index/img/produtos/brinquedos/ratopvc.png" alt="RatoDePVC">
                     <section>
-                        <p><strong>R$14,90</strong></p><br>
+                        <span>R$</span><span id="valor1">14,90</span>
+                    </section>
+                </div>
+                <div id="produto">
+                    <h2>Ossinho de Borracha</h2>
+                    <img src="../css/index/img/produtos/brinquedos/osso de borracha.png" alt="OssoDeBorracha">
+                    <section>
+                        <span>R$</span><span id="valor2">59,90</span>
                     </section>
                 </div>
             </nav>
         </div>
     </section>
     
-    <footer>
-        <p>&copy; 2024 - Todos os direitos reservados.</p>
-    </footer>
+    <section>
+        <footer>
+            <p>&copy; 2024 - Todos os direitos reservados.</p>
+        </footer>
+    </section>
 </body>
 </html>
