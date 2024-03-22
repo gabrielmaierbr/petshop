@@ -30,3 +30,30 @@ let valorTotalFormatado = valorTotal.toLocaleString('pt-BR', { minimumFractionDi
 
 let subtotal = document.getElementById("subtotal");
 subtotal.innerText = `Total a pagar: R$${valorTotalFormatado}`;
+
+
+let quantia = document.getElementById("quantidade");
+quantia = 1;
+quantia.innerText = quantia;
+
+
+function atualizarQuantidade(){
+    valor1 * quantia;
+}
+
+function addItem(){
+    quantia++;
+    atualizarQuantidade();
+}
+
+function removeItem(){
+    if(quantidade_value > 0)
+    {
+        quantia--;
+        atualizarQuantidade();
+    }
+    else
+    {
+        alert('A quantidade não pode ser inferior a 0');
+    }
+}
