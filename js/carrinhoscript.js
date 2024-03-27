@@ -18,42 +18,41 @@ function buscarEndereco() {
     .catch(error => console.error('Erro:', error));
 }
 
-let valor1 = document.getElementById("valor1").innerText;
-let valor2 = document.getElementById("valor2").innerText;
+// Função para exibir os itens do carrinho na página do carrinho
+function displayCart() {
+  const cart = JSON.parse(localStorage.getItem('cart'));
+  const cartList = document.getElementById('cart');
 
-valor1 = parseFloat(valor1.replace(',', '.'));
-valor2 = parseFloat(valor2.replace(',', '.'));
+  // Limpa o conteúdo atual do carrinho
+  cartList.innerHTML = '';
 
-let valorTotal = valor1 + valor2;
+  // Verifica se há itens no carrinho
+  if (cart && cart.length > 0) {
+    // Loop através de cada item do carrinho e adiciona à lista
+    cart.forEach(item => {
+      const cartItem = document.createElement('li');
 
-let valorTotalFormatado = valorTotal.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+      const itemImage = document.createElement('img');
+      itemImage.src = item.image;
+      itemImage.alt = item.name;
+      cartItem.appendChild(itemImage);
 
-let subtotal = document.getElementById("subtotal");
-subtotal.innerText = `Total a pagar: R$${valorTotalFormatado}`;
+      const itemName = document.createElement('p');
+      itemName.textContent = item.name;
+      cartItem.appendChild(itemName);
 
+      const itemPrice = document.createElement('p');
+      itemPrice.textContent = item.price;
+      cartItem.appendChild(itemPrice);
 
-let quantia = document.getElementById("quantidade");
-quantia = 1;
-quantia.innerText = quantia;
-
-
-function atualizarQuantidade(){
-    valor1 * quantia;
+      cartList.appendChild(cartItem);
+    });
+  } else {
+    // Se o carrinho estiver vazio, exibe uma mensagem
+    cartList.innerHTML = '<h1>Carrinho vazio</h1>';
+    cartList.style.fontFamily = 'Inter, sans-serif'
+  }
 }
 
-function addItem(){
-    quantia++;
-    atualizarQuantidade();
-}
-
-function removeItem(){
-    if(quantidade_value > 0)
-    {
-        quantia--;
-        atualizarQuantidade();
-    }
-    else
-    {
-        alert('A quantidade não pode ser inferior a 0');
-    }
-}
+// Chama a função para exibir os itens do carrinho ao carregar a página
+window.onload = displayCart;

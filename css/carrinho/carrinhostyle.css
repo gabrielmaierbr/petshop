@@ -150,54 +150,6 @@ header
     margin-left: 80px;
 }
 
-.produtos
-{
-    display: flex;
-    justify-content: space-around;
-    padding: 15px;
-    justify-content: start;
-    margin-left: 60px;
-}
-
-    .produtos nav div
-    {
-
-        font-size: 15px;
-        padding: 15px;
-        border-radius: 8px;
-        margin: 10px;
-        width: 400px;
-        height: 200px;
-        box-shadow: 0 0 5px black;
-        transition: 0.8s;
-    }
-        .produtos nav div h2
-        {
-            text-align: center;
-        }
-
-        .produtos nav div:hover
-        {
-            background-color: rgb(84, 202, 84);
-        }
-
-        .produtos nav div section
-        {
-            display: flex;
-            justify-content: end;
-            font-size: 20px;
-            position: relative;
-            bottom: 50%;
-            margin-right: 15px;
-        }
-
-        .produtos img
-        {
-            margin-left: 15px;
-            height: 125px;
-            width: 125px;
-        }
-
 .menuVenda
 {
     font-family: "Inter", sans-serif;

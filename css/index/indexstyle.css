@@ -164,7 +164,7 @@ header
     padding: 15px;
 }
 
-    .itens div
+    #product
     {
         font-size: 15px;
         padding: 15px;
@@ -177,23 +177,23 @@ header
         transition: 0.8s;
     }
 
-    .itens div:hover
+    #product:hover
     {
         background-color: rgb(84, 202, 84);
     }
 
-        .itens div section
+        #product section
         {
             font-size: 20px;
         }
 
-    .itens img
+    #product img
     {
         height: 250px;
         width: 250px;
     }
 
-    .itens button
+    #product button
     {
         color: black;
         border-radius: 10px;
@@ -204,7 +204,7 @@ header
         transition: 0.3s;
     }
 
-    .itens button:hover
+    #product button:hover
     {
         box-shadow: 0 0 1px 1px;
         padding: 10px 18px;
